@@ -20,7 +20,7 @@ content:
         type: text
         description: "Short description of the job post. It will be used for schema.org and og:description."
         required: true
-      - name: description
+      - name: product
         label: Description
         type: rich-text
         options:
