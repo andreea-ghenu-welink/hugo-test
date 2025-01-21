@@ -15,22 +15,16 @@ content:
         label: Title
         type: string
         required: true
-      - name: description
+      - name: description_long
         label: Meta Description
         type: text
         description: "Short description of the job post. It will be used for schema.org and og:description."
         required: true
-#      - name: body
-#        label: Body
-#        type: rich-text
-#        options:
-#          format: html
-
-      - name: testtetst
-        label: Title for test
-        type: string
-        required: true
-
+      - name: description
+        label: Description
+        type: text
+        options:
+          format: html
       - name: published_date
         label: Published Date
         type: date
