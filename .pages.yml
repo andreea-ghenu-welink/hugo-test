@@ -56,3 +56,8 @@ content:
       - name: meta_description
         label: Description
         type: text
+      - name: product_description
+        label: Product Description
+        type: rich-text
+        options:
+          format: html
