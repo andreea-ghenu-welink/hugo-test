@@ -14,12 +14,10 @@ content:
       - name: title
         label: Title
         type: string
-        required: true
       - name: description_long
         label: Meta Description
         type: text
         description: "Short description of the job post. It will be used for schema.org and og:description."
-        required: true
       - name: description_short
         label: Description Short
         type: rich-text
@@ -31,7 +29,6 @@ content:
       - name: published_date
         label: Published Date
         type: date
-        required: true
       - name: modified_date
         label: Modified Date
         type: date
@@ -44,3 +41,23 @@ content:
         type: string
         hidden: true
         default: job
+  #--------------------
+  #  Products
+  #--------------------
+  - name: products
+    label: Products
+    path: data
+    filename: products.yml
+    type: collection
+    fields:
+      - name: title
+        label: Title
+        type: string
+      - name: meta_description
+        label: Description
+        type: text
+      - name: product_description
+        label: Product Description
+        type: rich-text
+        options:
+          format: html
