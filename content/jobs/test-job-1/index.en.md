@@ -5,7 +5,7 @@ description_long: Lorem ipsum odor amet, consectetuer adipiscing elit. Posuere
   Curabitur tellus senectus parturient, rutrum sociosqu orci. Suspendisse
   sodales semper sapien eros parturient nisi. Gravida elit mollis justo montes
   eget egestas id augue?
-description: <p>Lorem ipsum odor amet</p>
+description_short: <p>Lorem Ipsum</p>
 published_date: 2025-01-21
 draft: false
 type: job
