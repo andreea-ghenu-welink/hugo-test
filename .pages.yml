@@ -25,6 +25,12 @@ content:
 #        type: rich-text
 #        options:
 #          format: html
+
+      - name: testtetst
+        label: Title for test
+        type: string
+        required: true
+
       - name: published_date
         label: Published Date
         type: date
