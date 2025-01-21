@@ -5,6 +5,7 @@ description: Lorem ipsum odor amet, consectetuer adipiscing elit. Posuere
   Curabitur tellus senectus parturient, rutrum sociosqu orci. Suspendisse
   sodales semper sapien eros parturient nisi. Gravida elit mollis justo montes
   eget egestas id augue?
+text: <p>Lorem ipsum odor amet, consectetuer adipiscing elit.</p>
 published_date: 2025-01-21
 draft: false
 type: job
