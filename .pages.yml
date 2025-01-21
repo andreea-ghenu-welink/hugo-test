@@ -19,13 +19,10 @@ content:
         type: text
         description: "Short description of the job post. It will be used for schema.org and og:description."
       - name: description_short
-        label: Description Short
+        label: Short Description
         type: rich-text
         options:
           format: html
-          image:
-            path: static/
-            extensions: [ jpg, jpeg, png ]
       - name: published_date
         label: Published Date
         type: date
