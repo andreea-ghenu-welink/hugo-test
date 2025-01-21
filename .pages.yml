@@ -24,7 +24,7 @@ content:
         label: Text
         type: rich-text
         options:
-          format: html
+          format: markdown
       - name: published_date
         label: Published Date
         type: date
