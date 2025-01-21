@@ -20,14 +20,13 @@ content:
         type: text
         description: "Short description of the job post. It will be used for schema.org and og:description."
         required: true
-
-
-      - name: product
-        label: Description
+      - name: body
+        label: Body
         type: rich-text
         options:
-          format: html
-
+          image:
+            path: static/
+            extensions: [ jpg, jpeg, png ]
       - name: published_date
         label: Published Date
         type: date
