@@ -1,0 +1,144 @@
+media:
+  input: static/images
+  output: /images
+content:
+  #--------------------
+  #  Jobs
+  #--------------------
+  - name: jobs
+    label: Jobs
+    path: content/jobs
+    filename: index.en.md
+    type: collection
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: description
+        label: Meta Description
+        type: text
+        description: "Short description of the job post. It will be used for schema.org and og:description."
+        required: true
+      - name: published_date
+        label: Published Date
+        type: date
+        required: true
+      - name: modified_date
+        label: Modified Date
+        type: date
+        hidden: true
+      - name: draft
+        label: Draft
+        type: boolean
+      - name: weight
+        label: Order
+        type: number
+        options:
+          min: 0
+          step: 10
+      - name: free_text_1
+        label: Free Text
+        type: rich-text
+        options:
+          format: html
+      - name: work_location_type
+        label: Work Location Type
+        type: select
+        required: true
+        options:
+          values: [ Remote, On Site, Hybrid ]
+      - name: job_location
+        label: Job Location
+        type: select
+        options:
+          values:
+          - value: London, England, United Kingdom
+            label: London, England, United Kingdom
+          - value: Osaka, Japan
+            label: Osaka, Japan
+      - name: department
+        label: Department
+        type: select
+        options:
+          values: [Accessibility and Inclusion, Product and Design, Engineering, Marketing, New Department]
+      - name: industry
+        label: Industry
+        type: string
+      - name: months_of_experience
+        label: Months of Experience
+        type: number
+        options:
+          min: 0
+      - name: base_salary
+        label: Base Salary
+        type: object
+        description: "If only one value is provided, it will be used as 'fixed salary'. If both values are provided, a salary range will be created. You can leave blank if this information is not available."
+        fields:
+          - name: currency
+            label: Currency
+            type: select
+            options:
+              values: [ eur, gbp, jpy ]
+            default: gbp
+          - name: min
+            label: Base Salary Min
+            type: number
+            default: 0
+            options:
+              min: 0
+          - name: max
+            label: Base Salary Max
+            type: number
+            default: 0
+            options:
+              min: 0
+      - name: responsibilities
+        label: Responsibilities
+        type: object
+        list: true
+        fields:
+          - name: group_topic
+            label: Group Topic
+            type: string
+          - name: items
+            label: Items
+            type: text
+            list: true
+            required: true
+      - name: qualifications
+        label: Qualifications
+        type: object
+        list: true
+        fields:
+          - name: group_topic
+            label: Group Topic
+            type: string
+          - name: items
+            label: Items
+            type: text
+            list: true
+            required: true
+      - name: benefits
+        label: Benefits
+        type: object
+        list: true
+        fields:
+          - name: group_topic
+            label: Group Topic
+            type: string
+          - name: items
+            label: Items
+            type: text
+            list: true
+            required: true
+      - name: free_text_2
+        label: Free Text
+        type: rich-text
+        options:
+          format: html
+      - name: type
+        label: Type
+        type: string
+        hidden: true
+        default: job
