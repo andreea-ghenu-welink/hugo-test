@@ -7,7 +7,7 @@ content:
   #--------------------
   - name: jobs
     label: Jobs
-    path: content/jobs
+    path: content
     filename: index.en.md
     type: collection
     fields:
