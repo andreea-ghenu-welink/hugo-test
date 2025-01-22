@@ -30,6 +30,13 @@ content:
         label: Modified Date
         type: date
         hidden: true
+      - name: image
+        label: Image
+        type: image
+        options:
+          input: assets/images
+          output: /images
+          extensions: [ jpg, jpeg, png, webp, svg , gif ]
       - name: draft
         label: Draft
         type: boolean
